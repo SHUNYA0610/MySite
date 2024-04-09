@@ -39,6 +39,10 @@ header {
   list-style: none;
   font-size: 16px;
 }
+#hamburger {
+  display: none;
+}
+
 
 .main-visual {
   width: 100%; /* 横幅いっぱい */
@@ -48,7 +52,6 @@ header {
   background-position: center;
   margin-bottom: 0px;
 }
-
 .main-visual-content {
   width: 100%; /* 横幅*/
   height: 650px; /* 親の高さに揃え */
@@ -154,7 +157,6 @@ header {
   font-size: 16px;
   color: #000000;
 }
-
 .feature-contents {
   width: 980px;
   display: flex;
@@ -162,21 +164,17 @@ header {
   justify-content: center;
   padding-bottom: 90px;
 }
-
 .Strength {
   width: 320px;
 }
-
 .Strength:nth-child(2) {
   margin: 0px 10px; 
 }
-
 .Strength-heading {
   font-size: 20px;
   color: #000000;  
   margin: 10px 0px;
 }
-
 .Strength-text {
   text-align: left;
   color: #000000;  
@@ -213,7 +211,8 @@ header {
 .profile-contents {
   width: 1024px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-bottom: 90px;
 }
 .profile-width {
@@ -264,6 +263,7 @@ header {
 .contact-contents {
   width: 800px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 90px;
 }
@@ -305,4 +305,109 @@ footer{
 }
 .footer-text{
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+
+header {
+ height: 50px;
+}
+
+.header-object {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 50px;
+}
+.nav {
+  display: none;
+}
+
+#hamburger {
+  display: block;
+  margin: 5px 0;
+}
+
+.main-visual {
+  background-image: url(img/code.png);
+}
+.main-visual-heading {
+  font-size: 32px;
+}
+.main-visual-text {
+  font-size: 16px;
+}
+
+.portfolio-heading {
+  font-size: 32px;
+}
+.portfolio-text {
+  font-size: 16px;
+}
+.portfolioimage-contents {
+  width: 90%;
+  margin: 0 auto; 
+  row-gap: 10px;
+  column-gap: 0px; 
+}
+.portfolio-image:nth-child(1) {
+  display: none;
+}
+.portfolio-image:nth-child(2) {
+  display: none;
+}
+.portfolio-image:nth-child(6) {
+  display: none;
+}
+
+.feature-contents {
+  width: 90%;
+  margin: 0 auto;
+}
+.feature-heading {
+  font-size: 32px;
+}
+.feature-text {
+  font-size: 16px;
+}
+.Strength:nth-child(2) {
+  margin: 20px 0px; 
+}
+
+.profile-width{
+  width: 100%;
+}
+#profile-heading {
+  font-size: 32px;
+}
+.profile-text {
+  font-size: 16px;
+}
+.profile-contents{
+  width: 90%;
+  margin: 0 auto; 
+}
+
+.contact-width{
+  width: 100%;
+}
+.contac-heading {
+  font-size: 32px;
+}
+.contac-text {
+  font-size: 16px;
+}
+.contact-contents{
+  width: 90%;
+  margin: 0 auto; 
+}
+.contact-detail {
+  text-align: center;
+}
+.contact-detail-text {
+  text-align: center;
+}  
+
 }
