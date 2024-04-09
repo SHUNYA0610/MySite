@@ -8,6 +8,10 @@ a:visited{
   color:#FAFAFA;
 }
 
+header, nav, h2, .main-visual, footer {
+  font-family: "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
 header {
  width: 100%;
  height: 70px;
@@ -349,7 +353,9 @@ header {
 .portfolioimage-contents {
   width: 90%;
   margin: 0 auto; 
-  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   column-gap: 0px; 
 }
 .portfolio-image:nth-child(1) {
@@ -360,6 +366,15 @@ header {
 }
 .portfolio-image:nth-child(6) {
   display: none;
+}
+.portfolio-image:nth-child(3) {
+   margin: 0 auto; 
+}
+.portfolio-image:nth-child(4) {
+   margin: 0 auto; 
+}
+.portfolio-image:nth-child(5) {
+   margin: 0 auto; 
 }
 
 .feature-contents {
@@ -409,5 +424,8 @@ header {
 .contact-detail-text {
   text-align: center;
 }  
+br{
+  display: none;
+}
 
 }
